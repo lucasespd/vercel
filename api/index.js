@@ -14,8 +14,7 @@ app.use((req, res, next) => {
 });
 
 // Importante para variables de entorno
-//require("dotenv").config();
-process.loadEnvFile();
+require("dotenv").config();
 
 // Importante para tomar datos del body!
 const bodyParser = require("body-parser");
